@@ -53,9 +53,10 @@
     background: rgba(10, 10, 20, 0.98);
     border-bottom: 2px solid #00f2ff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;      /* buttons pushed to the right */
     align-items: center;
     gap: 20px;
+    padding-right: 20px;            /* little breathing room */
     z-index: 1000;
     box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
     transition: transform 0.3s ease-in-out;
@@ -108,8 +109,7 @@
 
   /* Status info (time + battery) */
   #status-info {
-    margin-left: auto;
-    margin-right: 15px;
+    margin-left: 15px;
     color: #00f2ff;
     font-size: 12px;
     display: flex;
@@ -657,10 +657,10 @@
       <div class="icon-emoji">🤕</div>
       <span class="item-name">Ragdoll Hit</span>
     </div>
-    <!-- Original game list (unchanged) -->
+    <!-- All the other original games (unchanged) -->
     <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/banjokazooie/index.html">
       <div class="icon-emoji">🧩</div>
-      <span class="item-name">Banjo-Kazooie</span>
+      <span class="item-name">Banjo‑Kazooie</span>
     </div>
     <div class="game-item" data-url="https://ikneedata.com/meleelight.html">
       <div class="icon-emoji">⚔️</div>
@@ -672,7 +672,7 @@
     </div>
     <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/halflife/index.html">
       <div class="icon-emoji">☢️</div>
-      <span class="item-name">Half-Life</span>
+      <span class="item-name">Half‑Life</span>
     </div>
     <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/houseofhazards/index.html">
       <div class="icon-emoji">🏠</div>
@@ -1025,7 +1025,7 @@
   <ul>
     <li>🆕 Added <strong>Update Log</strong> and <strong>Suggest</strong> sections.</li>
     <li>⚡ Real‑time battery status with charging indicator.</li>
-    <li>🕒 Current time displayed in the navigation bar.</li>
+    <li>🕒 Current time displayed (updates every second).</li>
     <li>🧩 New games: <em>Ragdoll Archers</em> and <em>Ragdoll Hit</em>.</li>
     <li>🔧 Various UI refinements and bug fixes.</li>
   </ul>
@@ -1069,8 +1069,6 @@
   function updateStatus() {
     const now = new Date();
     const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-    let text = time;
-
     if (navigator.getBattery) {
       navigator.getBattery().then(bat => {
         const level = Math.round(bat.level * 100) + "%";
@@ -1082,7 +1080,7 @@
     }
   }
   updateStatus();
-  setInterval(updateStatus, 60000);
+  setInterval(updateStatus, 1000); // update every second
 
   /* ==================== HOME ANIMATION ==================== */
   const field = document.getElementById("starField");
@@ -1161,7 +1159,8 @@
     const visible = Array.from(
       document.querySelectorAll(`#${containerId} > div`)
     ).filter(i => i.style.display !== "none");
-    if (visible.length > 0) visible[Math.floor(Math.random() * visible.length)].click();
+    if (visible.length > 0)
+      visible[Math.floor(Math.random() * visible.length)].click();
   }
 
   /* ==================== LOCAL STORAGE AUTH & CHAT ==================== */
@@ -1267,9 +1266,7 @@
 
   function renderMessage(data) {
     const chat = document.getElementById("chat-area");
-    const content = data.text
-      ? `<div>${data.text}</div>`
-      : `<img src="${data.img}" class="chat-img" />`;
+    const content = data.text ? `<div>${data.text}</div>` : `<img src="${data.img}" class="chat-img" />`;
     const html = `
       <div class="message-item">
         <div style="text-align:center; min-width:65px;">
