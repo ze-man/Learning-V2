@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning V2.1</title>
+    <title>Learning V2.0.1</title>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Segoe+UI:wght@400;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
@@ -580,6 +580,13 @@
         box-shadow: 0 0 16px currentColor;
         transform: scale(1.05);
       }
+
+      .cloak-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        margin: 15px 0 8px;
+      }
     </style>
   </head>
   <body>
@@ -610,260 +617,69 @@
         <button class="random-btn" onclick="openRandom('games')">🔀 RANDOM</button>
       </div>
       <div class="grid-container" id="games-grid">
-
-        <div class="game-item" data-url="https://ze-man.github.io/Ragdoll-Archers/">
-          <div class="icon-emoji">🏹</div>
-          <span class="item-name">Ragdoll Archers</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/Ragdoll-Hit/">
-          <div class="icon-emoji">🤕</div>
-          <span class="item-name">Ragdoll Hit</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/banjokazooie/index.html">
-          <div class="icon-emoji">🧩</div>
-          <span class="item-name">Banjo-Kazooie</span>
-        </div>
-        <div class="game-item" data-url="https://ikneedata.com/meleelight.html">
-          <div class="icon-emoji">⚔️</div>
-          <span class="item-name">Melee Light</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/undertale/index.html">
-          <div class="icon-emoji">❤️</div>
-          <span class="item-name">Undertale</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/halflife/index.html">
-          <div class="icon-emoji">☢️</div>
-          <span class="item-name">Half-Life</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/houseofhazards/index.html">
-          <div class="icon-emoji">🏠</div>
-          <span class="item-name">House of Hazards</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/aceattorney/index.html">
-          <div class="icon-emoji">⚖️</div>
-          <span class="item-name">Ace Attorney</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyjusticeforall/index.html">
-          <div class="icon-emoji">👔</div>
-          <span class="item-name">Justice For All</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneytnt/index.html">
-          <div class="icon-emoji">☕</div>
-          <span class="item-name">Trials & Tribulations</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyapollojustice/index.html">
-          <div class="icon-emoji">👨‍⚖️</div>
-          <span class="item-name">Apollo Justice</span>
-        </div>
-        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyinvestigations/index.html">
-          <div class="icon-emoji">🔍</div>
-          <span class="item-name">AA Investigations</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/breakingthebank/index.html">
-          <div class="icon-emoji">💰</div>
-          <span class="item-name">Breaking the Bank</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/escapingtheprison/index.html">
-          <div class="icon-emoji">⛓️</div>
-          <span class="item-name">Escaping the Prison</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/stealingthediamond/index.html">
-          <div class="icon-emoji">💎</div>
-          <span class="item-name">Stealing the Diamond</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/infiltratingtheairship/index.html">
-          <div class="icon-emoji">☁️</div>
-          <span class="item-name">Infiltrating the Airship</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fleeingthecomplex/index.html">
-          <div class="icon-emoji">🏢</div>
-          <span class="item-name">Fleeing the Complex</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool1/index.html">
-          <div class="icon-emoji">🏫</div>
-          <span class="item-name">Riddle School 1</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool2/index.html">
-          <div class="icon-emoji">📙</div>
-          <span class="item-name">Riddle School 2</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool3/index.html">
-          <div class="icon-emoji">📕</div>
-          <span class="item-name">Riddle School 3</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool4/index.html">
-          <div class="icon-emoji">📗</div>
-          <span class="item-name">Riddle School 4</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool5/index.html">
-          <div class="icon-emoji">📓</div>
-          <span class="item-name">Riddle School 5</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddletransfer/index.html">
-          <div class="icon-emoji">👽</div>
-          <span class="item-name">Riddle Transfer 1</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddletransfer2/index.html">
-          <div class="icon-emoji">🛸</div>
-          <span class="item-name">Riddle Transfer 2</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/FNaf-1/">
-          <div class="icon-emoji">🐻</div>
-          <span class="item-name">FNAF 1</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/FNaF-2/">
-          <div class="icon-emoji">🐰</div>
-          <span class="item-name">FNAF 2</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fnaf-3/index.html">
-          <div class="icon-emoji">🐥</div>
-          <span class="item-name">FNAF 3</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fnaf-4/index.html">
-          <div class="icon-emoji">🦊</div>
-          <span class="item-name">FNAF 4</span>
-        </div>
-        <div class="game-item" data-url="https://genizymath.github.io/iframe/185.html">
-          <div class="icon-emoji">🤡</div>
-          <span class="item-name">Sister Location</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/FNaF-PizzaSim/">
-          <div class="icon-emoji">🍕</div>
-          <span class="item-name">Pizzeria Sim</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/FNaF-UCN/">
-          <div class="icon-emoji">👹</div>
-          <span class="item-name">Custom Night</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten1/">
-          <div class="icon-emoji">🖍️</div>
-          <span class="item-name">Kindergarten 1</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten2/">
-          <div class="icon-emoji">🎒</div>
-          <span class="item-name">Kindergarten 2</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten3/">
-          <div class="icon-emoji">🍎</div>
-          <span class="item-name">Kindergarten 3</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/cuphead/">
-          <div class="icon-emoji">🥛</div>
-          <span class="item-name">Cuphead</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/hollowknight/">
-          <div class="icon-emoji">🗡️</div>
-          <span class="item-name">Hollow Knight</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/sm64/index.html">
-          <div class="icon-emoji">🌟</div>
-          <span class="item-name">Super Mario 64</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/supermarioworld/index.html">
-          <div class="icon-emoji">🍄</div>
-          <span class="item-name">Super Mario World</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/sonicthehedgehog3/index.html">
-          <div class="icon-emoji">🌀</div>
-          <span class="item-name">Sonic 3</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/starfox64/index.html">
-          <div class="icon-emoji">🦊</div>
-          <span class="item-name">Star Fox 64</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/supersmashbros/index.html">
-          <div class="icon-emoji">💥</div>
-          <span class="item-name">Super Smash Bros</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/Eaglercraft-launcher/">
-          <div class="icon-emoji">⛏️</div>
-          <span class="item-name">Minecraft</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/tetris/index.html">
-          <div class="icon-emoji">🧱</div>
-          <span class="item-name">Tetris</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/ovo/index.html">
-          <div class="icon-emoji">🏃</div>
-          <span class="item-name">OvO</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/slope/index.html">
-          <div class="icon-emoji">📉</div>
-          <span class="item-name">Slope</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/cookieclicker/index.html">
-          <div class="icon-emoji">🍪</div>
-          <span class="item-name">Cookie Clicker</span>
-        </div>
-        <div class="game-item" data-url="https://nb-ga.github.io/games-site/projects/subway-surfers-san-francisco/index.html">
-          <div class="icon-emoji">🛹</div>
-          <span class="item-name">Subway Surfers</span>
-        </div>
-        <div class="game-item" data-url="https://nb-ga.github.io/games-site/projects/bitlife/index.html">
-          <div class="icon-emoji">🧬</div>
-          <span class="item-name">BitLife</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/jetpackjoyride/index.html">
-          <div class="icon-emoji">🎒</div>
-          <span class="item-name">Jetpack Joyride</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/stickmanhook/index.html">
-          <div class="icon-emoji">🪝</div>
-          <span class="item-name">Stickman Hook</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/dinogame/index.html">
-          <div class="icon-emoji">🦖</div>
-          <span class="item-name">Chrome Dino</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/getawayshootout/index.html">
-          <div class="icon-emoji">🔫</div>
-          <span class="item-name">Getaway Shootout</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/Buckshot-Roulette/">
-          <div class="icon-emoji">🎲</div>
-          <span class="item-name">Buckshot Roulette</span>
-        </div>
-        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/1v1lol/">
-          <div class="icon-emoji">🎯</div>
-          <span class="item-name">1v1.LOL</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/GunSpin/">
-          <div class="icon-emoji">🔫</div>
-          <span class="item-name">Gun Spin</span>
-        </div>
-        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/drifthunters/index.html">
-          <div class="icon-emoji">🏎️</div>
-          <span class="item-name">Drift Hunters</span>
-        </div>
-        <div class="game-item" data-url="https://unblockedgamess3.gitlab.io/drift-hunters-pro/">
-          <div class="icon-emoji">🔥</div>
-          <span class="item-name">Drift Hunters Pro</span>
-        </div>
-        <div class="game-item" data-url="https://ijnfem.github.io/seraph/games/gdlite/index.html">
-          <div class="icon-emoji">🟦</div>
-          <span class="item-name">Geometry Dash</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/SchoolBoyRunaway/">
-          <div class="icon-emoji">👦</div>
-          <span class="item-name">School Boy Runaway</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/The-man-from-the-window/">
-          <div class="icon-emoji">🪟</div>
-          <span class="item-name">The man from the window</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/PizzaTower/">
-          <div class="icon-emoji">🍕</div>
-          <span class="item-name">Pizza Tower</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/Amandatheadventurer/">
-          <div class="icon-emoji">🐑</div>
-          <span class="item-name">Amanda The Adventurer</span>
-        </div>
-        <div class="game-item" data-url="https://ze-man.github.io/People-Playground/">
-          <div class="icon-emoji">👨</div>
-          <span class="item-name">People Playground</span>
-        </div>
-
+        <div class="game-item" data-url="https://ze-man.github.io/Ragdoll-Archers/"><div class="icon-emoji">🏹</div><span class="item-name">Ragdoll Archers</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/Ragdoll-Hit/"><div class="icon-emoji">🤕</div><span class="item-name">Ragdoll Hit</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/banjokazooie/index.html"><div class="icon-emoji">🧩</div><span class="item-name">Banjo‑Kazooie</span></div>
+        <div class="game-item" data-url="https://ikneedata.com/meleelight.html"><div class="icon-emoji">⚔️</div><span class="item-name">Melee Light</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/undertale/index.html"><div class="icon-emoji">❤️</div><span class="item-name">Undertale</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/halflife/index.html"><div class="icon-emoji">☢️</div><span class="item-name">Half‑Life</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/houseofhazards/index.html"><div class="icon-emoji">🏠</div><span class="item-name">House of Hazards</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/aceattorney/index.html"><div class="icon-emoji">⚖️</div><span class="item-name">Ace Attorney</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyjusticeforall/index.html"><div class="icon-emoji">👔</div><span class="item-name">Justice For All</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneytnt/index.html"><div class="icon-emoji">☕</div><span class="item-name">Trials & Tribulations</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyapollojustice/index.html"><div class="icon-emoji">👨‍⚖️</div><span class="item-name">Apollo Justice</span></div>
+        <div class="game-item" data-url="https://explore.clicksoftware.co.uk/resources/semag/aceattorneyinvestigations/index.html"><div class="icon-emoji">🔍</div><span class="item-name">AA Investigations</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/breakingthebank/index.html"><div class="icon-emoji">💰</div><span class="item-name">Breaking the Bank</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/escapingtheprison/index.html"><div class="icon-emoji">⛓️</div><span class="item-name">Escaping the Prison</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/stealingthediamond/index.html"><div class="icon-emoji">💎</div><span class="item-name">Stealing the Diamond</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/infiltratingtheairship/index.html"><div class="icon-emoji">☁️</div><span class="item-name">Infiltrating the Airship</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fleeingthecomplex/index.html"><div class="icon-emoji">🏢</div><span class="item-name">Fleeing the Complex</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool1/index.html"><div class="icon-emoji">🏫</div><span class="item-name">Riddle School 1</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool2/index.html"><div class="icon-emoji">📙</div><span class="item-name">Riddle School 2</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool3/index.html"><div class="icon-emoji">📕</div><span class="item-name">Riddle School 3</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool4/index.html"><div class="icon-emoji">📗</div><span class="item-name">Riddle School 4</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddleschool5/index.html"><div class="icon-emoji">📓</div><span class="item-name">Riddle School 5</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddletransfer/index.html"><div class="icon-emoji">👽</div><span class="item-name">Riddle Transfer 1</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/riddleschool/riddletransfer2/index.html"><div class="icon-emoji">🛸</div><span class="item-name">Riddle Transfer 2</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/FNaf-1/"><div class="icon-emoji">🐻</div><span class="item-name">FNAF 1</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/FNaF-2/"><div class="icon-emoji">🐰</div><span class="item-name">FNAF 2</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fnaf-3/index.html"><div class="icon-emoji">🐥</div><span class="item-name">FNAF 3</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/fnaf-4/index.html"><div class="icon-emoji">🦊</div><span class="item-name">FNAF 4</span></div>
+        <div class="game-item" data-url="https://genizymath.github.io/iframe/185.html"><div class="icon-emoji">🤡</div><span class="item-name">Sister Location</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/FNaF-PizzaSim/"><div class="icon-emoji">🍕</div><span class="item-name">Pizzeria Sim</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/FNaF-UCN/"><div class="icon-emoji">👹</div><span class="item-name">Custom Night</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten1/"><div class="icon-emoji">🖍️</div><span class="item-name">Kindergarten 1</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten2/"><div class="icon-emoji">🎒</div><span class="item-name">Kindergarten 2</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/kindergarten3/"><div class="icon-emoji">🍎</div><span class="item-name">Kindergarten 3</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/cuphead/"><div class="icon-emoji">🥛</div><span class="item-name">Cuphead</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/hollowknight/"><div class="icon-emoji">🗡️</div><span class="item-name">Hollow Knight</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/sm64/index.html"><div class="icon-emoji">🌟</div><span class="item-name">Super Mario 64</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/supermarioworld/index.html"><div class="icon-emoji">🍄</div><span class="item-name">Super Mario World</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/sonicthehedgehog3/index.html"><div class="icon-emoji">🌀</div><span class="item-name">Sonic 3</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/starfox64/index.html"><div class="icon-emoji">🦊</div><span class="item-name">Star Fox 64</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/supersmashbros/index.html"><div class="icon-emoji">💥</div><span class="item-name">Super Smash Bros</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/Eaglercraft-launcher/"><div class="icon-emoji">⛏️</div><span class="item-name">Minecraft</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/tetris/index.html"><div class="icon-emoji">🧱</div><span class="item-name">Tetris</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/ovo/index.html"><div class="icon-emoji">🏃</div><span class="item-name">OvO</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/slope/index.html"><div class="icon-emoji">📉</div><span class="item-name">Slope</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/cookieclicker/index.html"><div class="icon-emoji">🍪</div><span class="item-name">Cookie Clicker</span></div>
+        <div class="game-item" data-url="https://nb-ga.github.io/games-site/projects/subway-surfers-san-francisco/index.html"><div class="icon-emoji">🛹</div><span class="item-name">Subway Surfers</span></div>
+        <div class="game-item" data-url="https://nb-ga.github.io/games-site/projects/bitlife/index.html"><div class="icon-emoji">🧬</div><span class="item-name">BitLife</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/jetpackjoyride/index.html"><div class="icon-emoji">🎒</div><span class="item-name">Jetpack Joyride</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/stickmanhook/index.html"><div class="icon-emoji">🪝</div><span class="item-name">Stickman Hook</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/dinogame/index.html"><div class="icon-emoji">🦖</div><span class="item-name">Chrome Dino</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/getawayshootout/index.html"><div class="icon-emoji">🔫</div><span class="item-name">Getaway Shootout</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/Buckshot-Roulette/"><div class="icon-emoji">🎲</div><span class="item-name">Buckshot Roulette</span></div>
+        <div class="game-item" data-url="https://login.oaklandscioly.org/zones/html/1v1lol/"><div class="icon-emoji">🎯</div><span class="item-name">1v1.LOL</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/GunSpin/"><div class="icon-emoji">🔫</div><span class="item-name">Gun Spin</span></div>
+        <div class="game-item" data-url="https://cubeguide.github.io/econclasshelp/games/drifthunters/index.html"><div class="icon-emoji">🏎️</div><span class="item-name">Drift Hunters</span></div>
+        <div class="game-item" data-url="https://unblockedgamess3.gitlab.io/drift-hunters-pro/"><div class="icon-emoji">🔥</div><span class="item-name">Drift Hunters Pro</span></div>
+        <div class="game-item" data-url="https://ijnfem.github.io/seraph/games/gdlite/index.html"><div class="icon-emoji">🟦</div><span class="item-name">Geometry Dash</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/SchoolBoyRunaway/"><div class="icon-emoji">👦</div><span class="item-name">School Boy Runaway</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/The-man-from-the-window/"><div class="icon-emoji">🪟</div><span class="item-name">The man from the window</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/PizzaTower/"><div class="icon-emoji">🍕</div><span class="item-name">Pizza Tower</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/Amandatheadventurer/"><div class="icon-emoji">🐑</div><span class="item-name">Amanda The Adventurer</span></div>
+        <div class="game-item" data-url="https://ze-man.github.io/People-Playground/"><div class="icon-emoji">👨</div><span class="item-name">People Playground</span></div>
       </div>
     </div>
 
@@ -874,7 +690,6 @@
         <button class="random-btn" onclick="openRandom('apps')">🔀 RANDOM</button>
       </div>
       <div class="grid-container" id="apps-grid">
-
         <div class="app-item" data-url="https://ssvid.net/en-5">
           <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/12075708/125341_925164.png" class="icon-img" />
           <span class="item-name">Video Downloader</span>
@@ -887,7 +702,6 @@
           <img src="https://cdn-icons-png.flaticon.com/512/2065/2065157.png" class="icon-img" />
           <span class="item-name">URL Opener</span>
         </div>
-
       </div>
     </div>
 
@@ -959,6 +773,15 @@
           <button class="theme-btn" data-color="#ff6b35" style="background:#ff6b35;" onclick="setThemeColor(this)">Orange</button>
           <button class="theme-btn" data-color="#ffffff" style="background:#ffffff; color:#000;" onclick="setThemeColor(this)">White</button>
         </div>
+
+        <h3 style="color:var(--neon); margin:40px 0 12px;">Tab Cloaking</h3>
+        <button class="action-btn cloak-btn" style="background:linear-gradient(45deg, #ff5555, #aa0000);" onclick="cloakInAboutBlank()">
+          Open in about:blank (cloak tab)
+        </button>
+        <p style="font-size:13px; color:#aaa; text-align:center; line-height:1.4;">
+          Results may vary<br>
+          (if you see this you're not blind)
+        </p>
       </div>
     </div>
 
@@ -969,7 +792,7 @@
     </div>
 
     <script>
-      // ── Navigation ──
+      // Navigation
       function toggleNav() {
         document.getElementById("main-nav").classList.toggle("nav-hidden");
         document.body.classList.toggle("nav-closed");
@@ -982,7 +805,7 @@
         btn.classList.add("active");
       }
 
-      // ── Status bar ──
+      // Status bar
       const statusInfo = document.getElementById("status-info");
       function updateStatus() {
         const now = new Date();
@@ -1000,7 +823,7 @@
       updateStatus();
       setInterval(updateStatus, 1000);
 
-      // ── Home stars & shooting star ──
+      // Home animation
       const field = document.getElementById("starField");
       const shooter = document.getElementById("shooter");
       for (let i = 0; i < 35; i++) {
@@ -1030,7 +853,7 @@
       }
       launchShootingStar();
 
-      // ── Overlay / Games & Apps ──
+      // Overlay logic
       const overlay = document.getElementById("overlay-container");
       const frame = document.getElementById("overlay-frame");
 
@@ -1067,7 +890,7 @@
         if (visible.length) visible[Math.floor(Math.random() * visible.length)].click();
       }
 
-      // ── Theme system ──
+      // Theme system
       function setThemeColor(btn) {
         const color = btn.getAttribute("data-color");
         document.documentElement.style.setProperty("--neon", color);
@@ -1094,7 +917,38 @@
         document.querySelector(`.theme-btn[data-color="${savedTheme}"]`)?.classList.add("active");
       }
 
-      // ── Chat / Auth / LocalStorage ──
+      // about:blank cloaking
+      function cloakInAboutBlank() {
+        if (!confirm("This will try to open the current page in a new about:blank tab.\n\nContinue?")) return;
+
+        const fullHTML = document.documentElement.outerHTML;
+        const blob = new Blob([fullHTML], {type: "text/html"});
+        const url = URL.createObjectURL(blob);
+
+        const newWin = window.open("about:blank", "_blank");
+        if (newWin) {
+          newWin.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <title>Google Docs</title>
+              <link rel="icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico">
+            </head>
+            <body style="margin:0; padding:0; overflow:hidden;">
+              <iframe src="${url}" style="width:100vw; height:100vh; border:none;"></iframe>
+            </body>
+            </html>
+          `);
+          newWin.document.close();
+
+          // Optional: try to close current tab (works in some environments only)
+          setTimeout(() => { try { window.close(); } catch(e) {} }, 1200);
+        } else {
+          alert("Popup was blocked.\nPlease allow popups for this site to use the cloaking feature.");
+        }
+      }
+
+      // ── Chat / Auth logic ──
       let userData = { username: "", pfp: "https://www.gravatar.com/avatar/?d=mp", bg: "" };
       let receivedMsgIds = [];
       let authMode = "login";
@@ -1214,7 +1068,7 @@
 
       function toggleSettings() {
         const s = document.getElementById("settings-overlay");
-        s.style.display = s.style.display === "none" || s.style.display === "" ? "flex" : "none";
+        s.style.display = (s.style.display === "none" || s.style.display === "") ? "flex" : "none";
       }
 
       function wipeCloudData() {
