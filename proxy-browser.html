@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxy Browser</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="proxy-style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/Destroyed12121/Staticsj@main/JS/scramjet.all.js" defer></script>
+    <script type="module">
+        import * as BareMux from "https://cdn.jsdelivr.net/npm/@mercuryworkshop/bare-mux/dist/index.mjs";
+        window.BareMux = BareMux;
+    </script>
+</head>
+<body>
+    <div class="browser-container">
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <button id="back-btn" title="Back"><i class="fas fa-chevron-left"></i></button>
+            <button id="fwd-btn" title="Forward"><i class="fas fa-chevron-right"></i></button>
+            <button id="reload-btn" title="Reload"><i class="fas fa-redo"></i></button>
+            <input class="address-bar" id="address-bar" placeholder="Enter URL or search..." autocomplete="off">
+            <select id="wisp-select">
+                <option value="wss://dash.goip.de/wisp/">DaydreamX</option>
+                <option value="wss://register.goip.it/wisp/">Space's Wisp</option>
+                <option value="wss://wisp.rhw.one/wisp/">Rhw's Wisp</option>
+                <option value="wss://gointospace.app/wisp/">GoToSpace</option>
+            </select>
+        </div>
+
+        <!-- Loading Bar -->
+        <div class="loading-bar-container">
+            <div id="loading-bar" class="loading-bar"></div>
+        </div>
+
+        <!-- Tabs Container -->
+        <div class="tabs-container" id="tabs-container"></div>
+
+        <!-- iframe Container -->
+        <div class="iframe-container" id="iframe-container"></div>
+    </div>
+
+    <script src="proxy-script.js"></script>
+</body>
+</html>
